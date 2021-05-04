@@ -17,7 +17,7 @@ class ConsultaViewSet(ModelViewSet):
     authentication_classes = [TokenAuthentication]
 
     def get_queryset(self):
-        queryset = Consulta.objects.filter(usuario=self.request.user, dia__gte=date.today())
+        queryset = Consulta.objects.filter(usuario=self.request.user).exclude(dia__lte=date.today())
         return queryset
 
     def create(self, request, *args, **kwargs):

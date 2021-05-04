@@ -13,7 +13,7 @@ class AgendaViewSet(ModelViewSet):
     http_method_names = ['get']
 
     def get_queryset(self):
-        queryset = Agenda.objects.filter(dia__gte=date.today()).order_by('dia')
+        queryset = Agenda.objects.exclude(dia__lte=date.today()).order_by('dia')
         data_inicio = self.request.query_params.get('data_inicio', None)
         data_final = self.request.query_params.get('data_final', None)
         medico = self.request.query_params.get('medico', None)

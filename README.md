@@ -3,14 +3,34 @@ Sistema para gestão de consultas em uma clínica médica
 
 ## Instalação
 
-```yaml
-git clone https://github.com/caikesilva/medicar_api.git
+* Crie e ative a virtualenv:
 
-python3 -m venv venv
+```json
 
-.\venv\Scripts\activate
+    python3 -m venv venv
 
-pip install -r requirements.txt
+    .\venv\Scripts\activate
+
+```
+
+* Instale as dependências:
+
+```json
+
+    pip install -r requirements.txt
+
+```
+* Faça o download do projeto:
+
+```json
+
+    git clone https://github.com/caikesilva/medicar_api.git
+
+```
+
+* Execute:
+
+```json
 
 python manage.py migrate
 
