@@ -19,6 +19,23 @@ python manage.py createsuperuser
 python manage.py runserver
 
 ```
+
+**Administração**
+
+``` 
+http://127.0.0.1:8000/admin/
+
+```
+
+**API**
+
+
+```
+
+http://127.0.0.1:8000/
+
+```
+
 ## Usuarios
 Cadastro e login de usuarios
 
