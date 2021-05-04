@@ -7,9 +7,9 @@ Sistema para gestão de consultas em uma clínica médica
 
 ```json
 
-    python3 -m venv venv
+python3 -m venv venv
 
-    .\venv\Scripts\activate
+.\venv\Scripts\activate
 
 ```
 
@@ -17,14 +17,14 @@ Sistema para gestão de consultas em uma clínica médica
 
 ```json
 
-    pip install -r requirements.txt
+pip install -r requirements.txt
 
 ```
 * Faça o download do projeto:
 
 ```json
 
-    git clone https://github.com/caikesilva/medicar_api.git
+git clone https://github.com/caikesilva/medicar_api.git
 
 ```
 
