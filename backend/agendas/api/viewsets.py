@@ -18,7 +18,7 @@ class AgendaViewSet(ModelViewSet):
         data_final = self.request.query_params.get('data_final', None)
         medico = self.request.query_params.get('medico', None)
         especialidade = self.request.query_params.get('especialidade', None)
-        
+    
         if medico:
             queryset = queryset.filter(medico=medico)
         
@@ -26,6 +26,6 @@ class AgendaViewSet(ModelViewSet):
             queryset = queryset.filter(medico__especialidade=especialidade)
 
         if data_inicio and data_final:
-            queryset = queryset.filter(dia__range=(data_inicio,data_final))
+            queryset = queryset.filter(dia__range=(data_inicio,data_final))        
 
         return queryset
