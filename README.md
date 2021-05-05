@@ -12,19 +12,27 @@ python3 -m venv venv
 .\venv\Scripts\activate
 
 ```
+* Faça o download do projeto:
+
+```json
+
+git clone https://github.com/caikesilva/medicar_api.git
+
+```
+
+* Execute
+
+```json
+
+cd .\backend\
+
+```
 
 * Instale as dependências:
 
 ```json
 
 pip install -r requirements.txt
-
-```
-* Faça o download do projeto:
-
-```json
-
-git clone https://github.com/caikesilva/medicar_api.git
 
 ```
 
