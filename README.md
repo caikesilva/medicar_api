@@ -20,7 +20,7 @@ git clone https://github.com/caikesilva/medicar_api.git
 
 ```
 
-* Execute
+* Execute:
 
 ```json
 
