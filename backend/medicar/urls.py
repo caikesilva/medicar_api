@@ -22,6 +22,8 @@ urlpatterns = [
 ]
 
 
+
+
 #Personalizando admin
 
 from django.contrib import admin
@@ -39,3 +41,4 @@ admin.site.unregister(User)
 admin.site.unregister(Group)
 admin.site.unregister(TokenProxy)
 admin.site.unregister(EmailAddress)
+
